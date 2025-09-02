@@ -8,10 +8,12 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: '0.0.0.0',
-    port: process.env.PORT || 4173
+    port: process.env.PORT || 4173,
+    allowedHosts: ['urban-6bqf.onrender.com', '.onrender.com']
   },
   preview: {
     host: '0.0.0.0',
-    port: process.env.PORT || 4173
+    port: process.env.PORT || 4173,
+    allowedHosts: ['urban-6bqf.onrender.com', '.onrender.com']
   }
 })
